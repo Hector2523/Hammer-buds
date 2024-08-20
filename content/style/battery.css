@@ -134,3 +134,20 @@ section#battery section.content aside.content div.case p {
     }
 
 }
+
+@media only screen and (max-height: 400px) {
+    section#battery section.content aside.content {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #A3A9A4;
+    }
+
+    section#battery section.content aside.content > div {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 10vmin;
+    }
+}

@@ -79,3 +79,17 @@ section#sound section.content aside.content p {
     }
 
 }
+
+@media only screen and (max-height: 400px) {
+    section#sound section.content aside.content h1 {
+        font-size: 1.7rem;
+    }
+
+    section#sound section.content aside.content p {
+        font-size: .8rem;
+    }
+
+    section#sound section.content aside.content {
+        max-width: 98vmin;
+    }
+}

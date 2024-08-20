@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+div#load {
+    display: none;
+}
+
+div#load.finish {
+    display: block !important;
+}
+
+div#loading {
+    position: relative;
+    z-index: 9;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    transition: .8s ease-in-out;
+}
+
+div#loading.finish {
+    opacity: 0;
+}
+
+div#loading div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#loading img#loadLogo {
+    height: 10vmin;
+    animation: logo 1s ease-in-out infinite;
+}
+
+@keyframes logo {
+    0% {
+        scale: 1;
+    }
+
+    25% {
+        scale: 1.5;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

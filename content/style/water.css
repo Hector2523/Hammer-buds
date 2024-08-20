@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url(variables.css);
+
+section#water {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+section#water section.align aside.water {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+section#water section.align aside.water::after {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 20, 0.768);
+}
+
+section#water section.align aside.water img {
+    position: absolute;
+    bottom: -20vmin;
+    z-index: 3;
+    width: 120%;
+}
+
+section#water section.align aside.water .modelviewer {
+    position: absolute;
+    left: 60%;
+    bottom: 40vmin;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100vmin;
+    height: 50vmin;
+}
+
+section#water section.align {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+section#water section.align aside.content {
+    position: relative;
+    z-index: 5;
+    width: 70%;
+}
+
+section#water section.align aside.content h1 {
+    font-size: 4.3vmin;
+    line-height: 1.15em;
+    margin-bottom: 4vmin;
+    color: white;
+    font-family: var(--Poppins);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.326);
+}
+
+section#water section.align aside.content p {
+    margin-top: 3vmin;
+    font-size: 2.25vmin;
+    line-height: 1.5em;
+    color: #fff;
+    font-family: var(--Poppins);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.214);
+}
+
+@media only screen and (max-width: 400px) {
+    section#water section.align aside.content {
+        width: 90%;
+    }
+
+    section#water section.align aside.content h1 {
+        font-size: 5vmin;
+    }
+    
+    section#water section.align aside.content p {
+        font-size: 3vmin;
+    }
+}

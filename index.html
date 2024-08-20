@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="content/favicon/ray.png" type="image/png">
+    <link rel="stylesheet" href="content/style/loading.css">
+    <link rel="stylesheet" href="content/style/variables.css">
+    <link rel="stylesheet" href="content/style/header.css">
+    <link rel="stylesheet" href="content/style/menu.css">
+    <link rel="stylesheet" href="content/style/home.css">
+    <link rel="stylesheet" href="content/style/water.css">
+    <link rel="stylesheet" href="content/style/sound.css">
+    <link rel="stylesheet" href="content/style/noise.css">
+    <link rel="stylesheet" href="content/style/battery.css">
+    <title>Hammer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div id="loading">
+        <div>
+            <img id="loadLogo" src="content/img/ray.png" alt="logo">
+        </div>
+    </div>
+
+    <div id="load">
+        <header>
+            <section>
+                <aside id="logo">
+                    <img src="content/img/ray.png" alt="The logo image">
+                </aside>
+                <aside class="menu">
+                    <div id="menuBtn">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                    </div>
+                </aside>
+            </section>
+            <menu id="menu">
+                <nav>
+                    <a href="#" id="homeMenu">Home <span></span></a>
+                    <a href="#" id="waterMenu">Water <span></span></a>
+                    <a href="#" id="soundMenu">Sound <span></span></a>
+                    <a href="#" id="noiseMenu">Noise <span></span></a>
+                    <a href="#" id="batteryMenu">Battery <span></span></a>
+                </nav>
+            </menu>
+        </header>
+        <main id="main">
+            <section id="home">
+                <section class="content">
+                    <aside class="align">
+                        <aside class="content">
+                            <h1>HAMMERPODS</h1>
+                            <h2>Resistente como um <span class="hammer">martelo</span>,<br>com um tamanho que cabe no bolso!</h2>
+                            <p>Conheça o <strong>HAMMERPODS</strong>, onde tamanho compacto encontra resistência imbatível. Feitos para quem não para, esses fones de ouvido oferecem som de alta qualidade em um design que cabe no seu bolso. Não importa onde sua próxima aventura o leve, o <strong>HAMMERPODS</strong> está pronto para enfrentar o desafio. Leve sua música mais longe com <strong>HAMMERPODS</strong>, onde cada nota ressoa com força e clareza. Desperte seus sentidos e eleve sua experiência auditiva.</p>
+                        </aside>
+                        <aside class="model">
+                            <model-viewer class="modelviewer" src="content/3Dmodels/airpods_3e_generation/untitled.glb"
+                                poster="content/img/airpods-3rd.png" loading="auto" canvas disable-zoom disable-pan disable-tap
+                                ios-src reveal="auto" alt="A 3D model of hammerbuds" ar
+                                ar-modes="webxr scene-viewer quick-look" shadow-intensity="0" interaction-prompt="none"
+                                camera-controls loading="eager" camera-orbit="-15deg 80deg 2.5m">
+                            </model-viewer>
+                            <div id="percentage">
+                                <h1><span id="percent">0</span>%</h1>
+                            </div>
+                        </aside>
+                    </aside>
+                </section>
+            </section>
+            <section id="water">
+                <section class="align">
+                    <aside class="content">
+                        <h1>HAMMERPOD: A Revolução dos Fones de Ouvido à Prova d'Água</h1>
+                        <p>
+                            Os fones de ouvido <strong>HAMMERPOD</strong> chegaram para redefinir o conceito de resistência e durabilidade. Com certificação <strong>IP68</strong>, esses fones são projetados para enfrentar os desafios do seu dia a dia, garantindo uma experiência de áudio imbatível em qualquer situação, seja sob chuva, suor ou poeira.
+                        </p>
+                        <p>
+                            <strong>IP68</strong> é o mais alto padrão de resistência à água e poeira, o que significa que os HAMMERPODs são completamente impermeáveis. Eles podem ser submersos em água a até 1,5 metros de profundidade por 30 minutos sem sofrer nenhum dano. Não importa se você está correndo em uma tempestade, praticando esportes aquáticos, ou enfrentando o calor intenso de um treino pesado — os HAMMERPODs continuam a entregar som cristalino e potente, sem interrupções.
+                        </p>
+                        <p>
+                            Além de sua resistência inigualável, os HAMMERPODs combinam design ergonômico com tecnologia avançada de áudio, proporcionando conforto e qualidade sonora que elevam seu desempenho ao máximo. Com HAMMERPOD, você pode explorar o mundo sem limitações, sempre com sua trilha sonora favorita ao seu lado.
+                        </p>
+                        <p>
+                            Escolha <strong>HAMMERPOD</strong> e descubra um novo nível de liberdade e proteção. Porque a vida não tem pausa — e agora, seus fones também não.
+                        </p>
+                    </aside>
+
+                    <aside class="water">
+                        <model-viewer class="modelviewer" id="waterModel" src="content/3Dmodels/water/water.glb"
+                                loading="auto" canvas disable-zoom disable-pan disable-tap
+                                ios-src reveal="auto" alt="A 3D model of hammerbuds"
+                                shadow-intensity="0" interaction-prompt="none" camera-orbit="-5deg 75deg 2.5m"
+                                loading="eager">
+                        </model-viewer>
+                        <img src="content/img/water-splash.png" alt="water splash">
+                    </aside>
+                </section>
+            </section>
+
+            <section id="sound">
+                <section class="background">
+                    <video src="content/videos/sound360.mp4" loop muted autoplay></video>
+                </section>
+
+                <section class="content">
+                    <aside class="content">
+                        <h1><span id="cinematic">0</span>° CINEMATIC SOUND</h1>
+                        <p>O Efeito de Áudio Espacial é baseado na Head-Related Transfer Function (HRTF) para som espacial, suportado por dispositivos Bluetooth ilimitados e fontes de áudio. Seja completamente envolvido por um som rico, de qualidade cinematográfica</p>
+                    </aside>
+                </section>
+            </section>
+
+            <section id="noise">
+                <section class="content">
+                    <aside class="content">
+                        <div>
+                            <h1>WIND NOISE REDUCTION 2.0</h1>
+                            <hr>
+                            <p>
+                                Os <strong>HAMMERPODS</strong> são projetados com uma estrutura exclusiva de fluxo de vento para minimizar o contato direto do vento com o microfone, reduzindo significativamente o ruído do vento. Algoritmos inteligentes de redução de ruído garantem que as conversas permaneçam claras, mesmo em condições de vento. Desfrute de clareza de áudio impecável e escuta ininterrupta, onde quer que você esteja.
+                            </p>
+                        </div>
+                    </aside>
+
+                    <aside class="video">
+                        <video src="content/videos/noise.mp4" loop muted autoplay></video>
+                    </aside>
+                </section>
+            </section>
+
+            <section id="battery">
+                <section class="content">
+                    <aside class="image">
+                        <img src="content/img/charge.jpg" alt="earphones charging">
+                    </aside>
+
+                    <aside class="content">
+                        <div>
+                            <h1>MINIMAL CHARGING,<br> MAXIMAL LISTENING</h1>
+                            <p>Get more of what you love, faster. A large 60 mAh battery in each bud delivers 10 hours of non-stop music on a single charge. 43 hours of playback with the case.</p>
+                            
+                            <section class="info">
+                                <div class="earbuds">
+                                    <h1><span id="earbudsNumber">0</span> HOURS</h1>
+                                    <aside class="info">
+                                        <p>Earbuds only</p>
+                                        <p>Up to 11 hrs of playback / 6 hrs of talk time (ANC off)</p>
+                                        <p>Up to 6.5 hrs of playback / 4.8 hrs of talk time (ANC on)</p>
+                                    </aside>
+                                </div>
+
+                                <div class="case">
+                                    <h1><span id="caseNumber">0</span> HOURS</h1>
+                                    <aside class="info">
+                                        <p>Earbuds plus charging case</p>
+                                        <p>Up to 43 hours of music playback / 25 hours of talk time (ANC off)</p>
+                                        <p>Up to 26 hours of music playback / 18.6 hours of talk time (ANC on)10-minute charge = 7 hours of listening (ANC off)</p>
+                                    </aside>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const load = document.getElementById('load');
+        const loading = document.getElementById('loading');
+        const modelViewer = document.querySelector('.modelviewer');
+        const percent = document.getElementById('percent');
+        const viewer = document.getElementById('percentage');
+
+        modelViewer.addEventListener('progress', (event) => {
+            const totalProgress = parseInt(event.detail.totalProgress * 100);
+            percent.innerHTML = totalProgress;
+
+            if (totalProgress === 100) {
+                viewer.classList.add('finish');
+                setTimeout(() => {
+                    viewer.style.display = 'none';
+                    hideLoadingScreen();
+                }, 1000);
+            }
+        });
+
+        function hideLoadingScreen() {
+                load.classList.add('finish');
+                setTimeout(() => {
+                    loading.classList.add('finish');
+                    setTimeout(() => {
+                        loading.remove()
+                    }, 100)
+                }, 100)
+            }
+
+        window.addEventListener('load', () => {
+            if (modelViewer.getAttribute('reveal') === 'auto' && modelViewer.isLoaded) {
+                hideLoadingScreen();
+            }
+        });
+    </script>
+    <script src="content/JS/menu.js" defer="true"></script>
+    <script src="content/JS/sections.js" defer="true"></script>
+    <script src="content/JS/model.js" defer="true"></script>
+</body>
+</html>

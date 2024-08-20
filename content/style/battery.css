@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url(variables.css);
+
+section#battery {
+    position: relative;
+    overflow: hidden;
+    height: 102vh;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-.5vh);
+}
+
+section#battery section.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#battery section.content aside.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#battery section.content aside.image img {
+    height: 100%;
+    object-position: center center;
+}
+
+section#battery section.content aside.content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3A9A4;
+}
+
+section#battery section.content aside.content div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+section#battery section.content aside.content section.info {
+    margin-top: 6vmin;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#battery section.content aside.content>div>h1 {
+    color: rgb(36, 35, 35);
+    font-size: 4vmin;
+    font-family: var(--Anek);
+    line-height: 1.15em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.255);
+}
+
+section#battery section.content aside.content>div>p {
+    font-family: var(--Amsterdam);
+    color: rgb(25, 25, 25);
+    font-size: 2vmin;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.255);
+}
+
+section#battery section.content aside.content div.earbuds,
+section#battery section.content aside.content div.case {
+    width: 50%;
+}
+
+section#battery section.content aside.content div.earbuds h1,
+section#battery section.content aside.content div.case h1 {
+    font-family: var(--Anek);
+    font-size: 4vmin;
+    color: rgb(23, 23, 23);
+}
+
+section#battery section.content aside.content div.earbuds h1 span,
+section#battery section.content aside.content div.case h1 span {
+    font-size: 12vmin;
+}
+
+section#battery section.content aside.content div.earbuds p,
+section#battery section.content aside.content div.case p {
+    font-family: var(--Anek);
+    font-size: 1.5vmin;
+    color: black;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.164);
+}
+
+@media only screen and (max-width: 400px) {
+    section#battery section.content aside.content {
+        width: 60% !important;
+    }
+
+    section#battery section.content aside.image {
+        width: 40% !important;
+    }
+
+    section#battery section.content aside.content div h1 {
+        font-size: 5.5vmin;
+    }
+
+    section#battery section.content aside.content div p {
+        font-size: 3.5vmin;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    section#battery section.content aside.content section.info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6vmin;
+        margin-top: 6vmin;
+    }
+
+    section#battery section.content aside.content div.earbuds,
+    section#battery section.content aside.content div.case {
+        width: 100%;
+    }
+
+    section#battery section.content aside.content div.earbuds h1,
+    section#battery section.content aside.content div.case h1 {
+        line-height: 1.15em;
+    }
+
+    section#battery section.content aside.content div.earbuds p,
+    section#battery section.content aside.content div.case p {
+        font-size: 2.2vmin;
+    }
+
+}

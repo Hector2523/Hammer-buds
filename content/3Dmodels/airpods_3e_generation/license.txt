@@ -1,0 +1,11 @@
+Model Information:
+* title:	AirPods (3ᵉ génération)
+* source:	https://sketchfab.com/3d-models/airpods-3e-generation-ed331e742ab944e683dcddd59ab0713e
+* author:	polyman (https://sketchfab.com/Polyman_3D)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AirPods (3ᵉ génération)" (https://sketchfab.com/3d-models/airpods-3e-generation-ed331e742ab944e683dcddd59ab0713e) by polyman (https://sketchfab.com/Polyman_3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
